@@ -7,4 +7,7 @@ add_executable(AdventOfCode main.cpp
         i_puzzle.h
         puzzle_factory.h
         day_1/trebuchet.cpp
-        day_1/trebuchet.h)
+        day_1/trebuchet.h
+        day_2/cube_conundrum.cpp
+        day_2/cube_conundrum.h
+)
