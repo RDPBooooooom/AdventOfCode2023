@@ -9,6 +9,8 @@
 #include "../i_puzzle.h"
 
 struct calibration_value {
+    bool first = true;
+    
     std::string first_digit;
     std::string last_digit;
 
@@ -20,6 +22,10 @@ struct calibration_value {
 class trebuchet : public i_puzzle {
 public:
     void solve() override;
+
+    void check_digit(const char& digit, calibration_value &value);
+
+    char get_number(const std::string &to_cleanup);
 };
 
 
